@@ -1,0 +1,10 @@
+# nodde modules
+/node_modules
+
+# env information
+.env
+.vscode/
+
+# frontend
+frontend/package - lock.json
+frontend/yarn.lock
