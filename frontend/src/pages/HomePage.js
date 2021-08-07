@@ -1,10 +1,11 @@
 import React from 'react';
+import OurStoryContainer from '../containers/OurStoryContainer';
 
 function HomePage() {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <>
+            <OurStoryContainer />
+        </>
     )
 }
 

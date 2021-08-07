@@ -1,0 +1,68 @@
+/* Global Styles */
+.our-story-header-wrapper {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5rem;
+    z-index: 10;
+}
+
+.our-story-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: .5rem;
+    height: auto;
+    position: relative;
+    margin: 0 3.5rem;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.logo {
+    margin-right: auto;
+    padding: 0;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .logo {
+        width: auto;
+        height: 1.5rem;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .logo {
+        width: auto;
+        height: 2rem;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) and (max-width: 1199px) {
+    .logo {
+        width: 6.75rem;
+        height: 2rem;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .logo {
+        width: 10.4375rem;
+        height: 2.8125rem;
+    }
+}

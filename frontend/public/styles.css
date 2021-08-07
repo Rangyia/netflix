@@ -4,7 +4,7 @@ html,
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #000;
-    color: #fff;
+    color: rgb(252, 238, 238);
     font-size: 16px;
     margin: 0;
     max-width: 2000px;
@@ -15,6 +15,29 @@ a {
     text-decoration: none;
 }
 
+a:visited, a:link, a:hover {
+    color: inherit;
+}
+
 * {
     box-sizing: border-box;
+}
+
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) and (max-width: 1199px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
 }
