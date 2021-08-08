@@ -7,12 +7,13 @@ import PrimaryButton from '../components/Button/PrimaryButton';
 import SelectorButton from '../components/Button/SelectorButton';
 import Typography from '../components/Typography/Typography';
 import BannerWrapper from '../components/Header/BannerWrapper';
+import EmailForm from '../components/Header/EmailForm';
 
 function HeaderContainer({ children, ...restProps }) {
 
     return (
         <div className="header-container">
-            <HeaderWrapper className="header-wrapper">
+            <HeaderWrapper className="header-wrapper-home">
                 <div className="nav-bar-wrapper">
                     <Navbar className="nav-bar-home">
                         <Logo />
@@ -34,6 +35,10 @@ function HeaderContainer({ children, ...restProps }) {
                     <div className="banner-home-text">
                         <Typography tag='h1'>Unlimited movies, TV shows, and more.</Typography>
                         <Typography tag='h2'>Watch anywhere. Cancel anytime.</Typography>
+                        <div className="banner-home-email-form">
+                            <Typography tag='h3'>Ready to watch? Enter your email to create or restart your membership.</Typography>
+                            <EmailForm />
+                        </div>
                     </div>
                 </BannerWrapper>
 

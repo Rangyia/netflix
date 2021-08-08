@@ -20,6 +20,9 @@ if (process.env.NODE_ENV === "production") {
 
 
 /* ROUTER STACK */
+app.get('/api/v1/users/:id', (req, res) => {
+    res.json(req.params.id);
+})
 
 
 /* CATCH ALL */

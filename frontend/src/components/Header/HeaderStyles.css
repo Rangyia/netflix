@@ -104,12 +104,18 @@
 ========================================================================== */
 .banner-home-background {
     top: -100px;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .banner-home-bg-wrapper {
     top: 0;
     width: 100%;
     position: absolute;
+    height: 80%;
 }
 
 .banner-home-bg-img {
@@ -141,3 +147,10 @@
 
 /* Form
 ========================================================================== */
+.banner-home-email-form {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;  
+}

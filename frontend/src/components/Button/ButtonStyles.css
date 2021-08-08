@@ -2,7 +2,6 @@
 .btn-primary, .btn-secondary, .btn-selector {
     border-radius: 3px;
     margin-top: 0;
-    font-size: 1rem;
 }
 
 /* Primary Button Styles */
@@ -14,11 +13,6 @@
 .btn-secondary {
     border: solid 1px rgb(252, 238, 238);
     background-color: rgb(252, 238, 238);
-}
-
-/* Label Button Styles */
-.btn-label {
-    background-color: #e50914;
 }
 
 @media only screen and (max-width: 399px) {

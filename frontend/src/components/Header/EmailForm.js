@@ -1,24 +1,43 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import './EmailFormStyles.css'
+import api from '../../api'
 
 function EmailForm(props) {
+
+    const user = {
+        email: ''
+    }
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        let { value } = e.target;
+        user.email = value;
+    }
+
+    const handleSubmit = async (email) => {
+        if (email == '' || email == null || !email.includes('@'))
+            return;
+
+        const username = await api.get(`/users/${email}`).then(res => {
+            return res.data;
+        })
+        console.log(username);
+    }
+
     return (
         <div className="email-form-container">
             {props.children}    
             <div className="email-form-wrapper">
                 <div className="email-form">
                     <label>
-                        <input type="email" name="email" id="email-lookup" autoComplete="email" maxLength="50" minLength="5" />
-                        <label for="email-lookup" className="placeLabel">Email address</label>
+                        <input onChange={handleChange} className="email-text-field" placeholder="Email address" type="email" name="email" id="email-lookup" autoComplete="email" maxLength="50" minLength="5" />
                     </label>
                 </div>
-                <div className="email-form-btn">
-                    <button class="btn btn-label">
+                <div className="email-form-btn" onClick={() => handleSubmit(user.email)}>
+                    <span className="email-btn">
                         <span>Get Started</span>
-                        <span>
-                            <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd"></path></svg>
-                        </span>
-                    </button>
+                        <span>☰</span>
+                    </span>
                 </div>
             </div>
         </div>
