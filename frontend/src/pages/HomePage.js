@@ -1,10 +1,12 @@
 import React from 'react';
-import OurStoryContainer from '../containers/OurStoryContainer';
+import HeaderContainer from '../containers/HeaderContainer';
+import Seperator from '../components/Seperator/Seperator';
 
 function HomePage() {
     return (
         <>
-            <OurStoryContainer />
+            <HeaderContainer />
+            <Seperator />
         </>
     )
 }

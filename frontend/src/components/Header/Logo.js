@@ -1,5 +1,4 @@
 import React from 'react';
-import './HeaderStyles.css';
 
 function Logo({children, ...restProps}) {
     return (

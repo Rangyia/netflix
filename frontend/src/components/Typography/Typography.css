@@ -1,0 +1,31 @@
+/* Typography
+========================================================================== */
+@media only screen and (min-width: 320px) {
+
+	/* BASE 
+	=================== */
+    h1 { font-size: 1.75rem; line-height: 1.1; }
+    h2 { font-size: 1.125rem; }
+    h3 { font-size: 1.25rem; }
+    span { font-size: 0.813rem; }
+}
+
+@media only screen and (min-width: 480px) {
+
+	/* BASE 
+	=================== */
+    h1 { font-size: 3.125rem; line-height: 1.1; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.25rem; }
+    span { font-size: 0.813rem; }
+}
+
+@media only screen and (min-width: 768px) {
+	
+	/* BASE 
+	=================== */
+    h1 { font-size: 4rem; line-height: 1.1; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.25rem; }
+    span { font-size: 0.813rem; }
+}
