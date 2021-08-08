@@ -1,8 +1,9 @@
 # :zap: Netflix Clone (PERN Stack)
 
-* NOT THE OFFICIAL NETFLIX SITE.
-
+NOT THE OFFICIAL NETFLIX SITE
+-----------------------------
 * PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend.
+
 ![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/netflix/netflix.PNG)
 
 ## :books: General info
