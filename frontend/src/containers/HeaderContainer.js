@@ -13,7 +13,6 @@ function HeaderContainer({ children, ...restProps }) {
     return (
         <div className="header-container">
             <HeaderWrapper className="header-wrapper">
-
                 <div className="nav-bar-wrapper">
                     <Navbar className="nav-bar-home">
                         <Logo />
