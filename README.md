@@ -3,7 +3,7 @@
 * NOT THE OFFICIAL NETFLIX SITE.
 
 * PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend.
-![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/netflix/netflix.PNG)`
+![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/netflix/netflix.PNG)
 
 ## :books: General info
 
@@ -31,11 +31,3 @@
 
 * [React framework v17](https://reactjs.org/)
 * [Bootstrap v4](https://getbootstrap.com/) component library ==> Need to get
-
-
-
-This sandbox project has templates built with CSS grid & flexbox layouts practice for mastering HTML / CSS / Basic JS functions.  This project is really used for keeping up with layout designs today and their basic functionalities.
-
-## Grid Projects
-### Grid-Software
-![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/grid-software-cover.JPG)`
