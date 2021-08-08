@@ -19,6 +19,7 @@
     "nodemon": "^2.0.12",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
+    "react-responsive": "^9.0.0-beta.3",
     "react-router-dom": "^5.2.0"
   }
 }

@@ -12,8 +12,8 @@ import EmailForm from '../components/Header/EmailForm';
 function HeaderContainer({ children, ...restProps }) {
 
     return (
-        <div className="header-container">
-            <HeaderWrapper className="header-wrapper-home">
+        <div className="header-container" style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%), url("./images/misc/home-bg-en.jpg")`, backgroundSize: 'cover'}}>
+            <HeaderWrapper className="header-wrapper-home" >
                 <div className="nav-bar-wrapper">
                     <Navbar className="nav-bar-home">
                         <Logo />
@@ -26,12 +26,6 @@ function HeaderContainer({ children, ...restProps }) {
                 </div>
 
                 <BannerWrapper className="banner-home-wrapper">
-                    <div className="banner-home-background">
-                        <div className="banner-home-bg-wrapper">
-                            <img className="banner-home-bg-img" href="/" src="./images/misc/home-bg-en.jpg" alt="Netflix Banner" />
-                            <div className="banner-home-bg-img-gradient"></div>
-                        </div>
-                    </div>
                     <div className="banner-home-text">
                         <Typography tag='h1'>Unlimited movies, TV shows, and more.</Typography>
                         <Typography tag='h2'>Watch anywhere. Cancel anytime.</Typography>
@@ -41,9 +35,7 @@ function HeaderContainer({ children, ...restProps }) {
                         </div>
                     </div>
                 </BannerWrapper>
-
                 {children}
-
             </HeaderWrapper>
         </div>
     );

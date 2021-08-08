@@ -1,9 +1,10 @@
 import React from 'react'
 import './EmailFormStyles.css'
+import { useMediaQuery } from 'react-responsive'
 import api from '../../api'
 
 function EmailForm(props) {
-
+    
     const user = {
         email: ''
     }
@@ -15,7 +16,7 @@ function EmailForm(props) {
     }
 
     const handleSubmit = async (email) => {
-        if (email == '' || email == null || !email.includes('@'))
+        if (email === '' || email === null || !email.includes('@'))
             return;
 
         const username = await api.get(`/users/${email}`).then(res => {
